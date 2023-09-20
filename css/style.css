@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* font-family: 'Merriweather', serif; */
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  background-color: #479fff;
+  padding: 8px 0;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+}
+.container {
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  /* gap: 2%; */
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 50%;
+  display: block;
+}
+
+.logo img {
+  max-width: 130px;
+  display: block;
+}
+.menu {
+  width: 50%;
+  text-align: center;
+}
+
+.menu h1 {
+  font-size: 27px;
+  margin: 0;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.menu a {
+  background-color: #fff;
+  padding: 5px 8px;
+  display: inline-flex;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* ==============About Section==================== */
+.about-section {
+  padding: 40px 0 0 30px;
+}
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.col_1_2 {
+  width: 50%;
+}
+
+.col_1_2 div {
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-section h2 {
+  font-weight: 700;
+  font-size: 37px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 40px;
+  letter-spacing: -1px;
+  margin: 0;
+}
+.about-section h3 {
+  max-width: 300px;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+/* ===========Text Section============= */
+.col_full {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.content {
+  max-width: 615px;
+  /* border: 1px solid #4c4c4c30;
+  padding: 13px 14px;
+  border-radius: 12px; */
+}
+.content h2 {
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.content p {
+  margin: 0;
+  font-weight: 300;
+  text-align: center;
+  font-size: 17px;
+}
+
+.content ul {
+  list-style: none;
+  padding: 0;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 1px 0;
+}
+.content ul li span {
+  font-size: 17px;
+  font-weight: 300;
+}
+.headline-two h2 {
+  text-align: center;
+  margin: 0;
+  /* width: 700px; */
+}
+
+/* ========== Gallery Section ========== */
+
+.gallery-section {
+  padding: 30px 0 0 40px;
+  /* background-color: rgb(156, 210, 243); */
+}
+
+.gallery-section .container {
+  justify-content: center;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 700px;
+}
+.gallery > div {
+  width: 50%;
+  /* padding: 5px; */
+  aspect-ratio: 1;
+  padding: 5px 5px 0px 5px;
+}
+
+.gallery .details > div {
+  background-color: #479fff;
+  color: white;
+  padding: 20px;
+  height: 99%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.gallery .details h3 {
+  font-size: 24px;
+  margin: 0;
+  line-height: 1;
+}
+.gallery .details p {
+  margin: 0;
+  margin-top: 12px;
+}
+.number {
+  background: white;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 52%;
+  margin-bottom: 10px;
+}
+.number span {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #479fff;
+}
+/* ========== Responsive ==========*/
+
+@media screen and (max-width: 767px) {
+  header {
+    background-color: #479fff;
+    padding: 8px 40px;
+  }
+
+  .logo {
+    width: 25%;
+  }
+  .menu {
+    width: 75%;
+  }
+  .menu h1 {
+    font-size: 21px;
+    font-weight: 600;
+  }
+  .about-section {
+    padding: 25px 0;
+  }
+  .about-section h2 {
+    font-size: 28px;
+    line-height: 31px;
+    letter-spacing: 0;
+  }
+  .about-section h3 {
+    font-size: 16px;
+    margin-top: 8px;
+  }
+  .content {
+    width: 100%;
+  }
+  .content p {
+    font-size: 15px;
+  }
+  .content ul li span {
+    font-size: 15px;
+  }
+  .gallery-section {
+    padding: 32px 20px;
+  }
+  .gallery img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 575px) {
+}
